@@ -1,0 +1,426 @@
+<%- include("_navbar.ejs") %>
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="utf-8">
+	<!--  This file has been downloaded from bootdey.com    @bootdey on twitter -->
+	<!--  All snippets are MIT license http://bootdey.com/license -->
+	<title>Posts</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css"
+		integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l" crossorigin="anonymous">
+	<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+		integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous">
+	</script>
+	<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.bundle.min.js"
+		integrity="sha384-Piv4xVNRyMGpqkS2by6br4gNJ7DXjqk09RmUpJ8jgGtD7zP9yug3goQfGII0yAns" crossorigin="anonymous">
+	</script>
+	<style type="text/css">
+		.img-responsive {
+			display: block;
+			max-width: 100%;
+			height: auto;
+		}
+
+		body {
+
+
+			background: radial-gradient(ellipse at bottom, #032d62 0%, #0c317b 100%);
+			background-attachment: fixed;
+		}
+
+
+		.content-item {
+			padding: 30px 0;
+
+
+		}
+
+		.content-item.grey {
+
+			padding: 50px 0;
+			height: 100%;
+		}
+
+		.content-item h2 {
+			font-weight: 700;
+			font-size: 35px;
+			line-height: 45px;
+			text-transform: uppercase;
+			margin: 20px 0;
+		}
+
+		.content-item h3 {
+			font-weight: 400;
+			font-size: 20px;
+			color: white;
+			margin: 10px 0 15px;
+			padding: 0;
+		}
+
+		.content-headline {
+			height: 1px;
+			text-align: center;
+			margin: 20px 0 70px;
+		}
+
+		.content-headline h2 {
+
+			display: inline-block;
+			margin: -20px auto 0;
+			padding: 0 20px;
+		}
+
+		.grey .content-headline h2 {
+			background-color: #F0F0F0;
+		}
+
+		.content-headline h3 {
+			font-size: 14px;
+			color: #AAAAAA;
+			display: block;
+		}
+
+
+		#blog-timeline h2,
+		#blog-item h2 {
+			margin: 0 0 15px;
+		}
+
+		#blog-timeline .sidebar h3,
+		#blog-item .sidebar h3 {
+			margin-top: 15px;
+		}
+
+		.timeline {
+			border-left: 3px solid #BBBBBB;
+			margin-left: 110px;
+			padding-left: 25px;
+		}
+
+		.blog-post {
+
+			padding: 10px 25px;
+			margin-bottom: 60px;
+		}
+
+		.blog-post .date-xs {
+			display: none;
+		}
+
+		.blog-post p {
+			font-size: 14px;
+			line-height: 23px;
+			text-align: justify;
+			color: white;
+		}
+
+		.blog-post p img {
+			max-width: 200px;
+		}
+
+		.blog-post p img.pull-right {
+			margin-left: 15px;
+			max-height: 300px;
+			max-width: 400px;
+		}
+
+		@media only screen and (max-width: 767px) {
+			.blog-post p img.pull-right {
+				margin-left: 15px;
+				max-height: 300px;
+				max-width: 300px;
+			}
+		}
+
+		.blog-post p img.pull-left {
+			margin-right: 15px;
+		}
+
+		.blog-post .blog-info {
+			position: absolute;
+			left: 0;
+			margin-top: -10px;
+			width: 100px;
+
+			box-shadow: 0 0 2px 1px rgba(0, 0, 0, 0.2);
+		}
+
+		.blog-post .blog-info:after {
+			width: 20px;
+			height: 20px;
+			position: absolute;
+			right: -37px;
+			top: 21px;
+			content: "";
+			text-align: center;
+			border-radius: 50%;
+			border: 5px solid #F0F0F0;
+		}
+
+
+	
+
+		.blog-post .blog-info .date div {
+			float: left;
+			padding: 8px 0 0 12px;
+			font-weight: 600;
+		}
+
+		.blog-post .blog-info .date div.number {
+			padding: 4px 10px;
+			color: #FFFFFF;
+			font-size: 20px;
+		}
+
+		.box {
+
+			padding: 10px 20px;
+			box-shadow: 0 1px 2px 0 rgba(0, 0, 0, 0.1);
+			margin-bottom: 20px;
+		}
+
+		.box h3 {
+			margin: 30px 0 5px;
+			font-weight: bold;
+		}
+
+		.box ul {
+			margin: 0;
+		}
+
+		.box ul li {
+			font-size: 13px;
+			border-bottom: 1px dashed #DDDDDD;
+			padding: 10px 0;
+			font-weight: 600;
+		}
+
+		.box ul li:last-child {
+			border-bottom: 0;
+		}
+
+		.box ul li i {
+			font-size: 18px;
+			margin-right: 20px;
+		}
+
+		.box.categories ul li i {
+			color: #BBBBBB;
+			position: relative;
+			top: 2px;
+			width: 20px;
+		}
+
+		.posts ul li a {
+			font-size: 14px;
+			line-height: 23px;
+		}
+
+		.posts ul li a:hover {
+			color: #333333;
+		}
+
+		.posts ul li div {
+			font-size: 13px;
+			color: #999999;
+			font-weight: bold;
+			text-align: right;
+			margin-top: 5px;
+		}
+
+		.box.posts ul li i {
+			color: #333333;
+			font-size: 14px;
+			margin-right: 10px;
+		}
+
+		.box.tags ul.blog-tags li {
+			border: 0;
+		}
+
+		ul.blog-tags li {
+			padding: 7px 0;
+		}
+
+		div ul.blog-tags li i,
+		div .box.tags ul li i {
+			color: #FFFFFF;
+			position: relative;
+			top: 1px;
+			font-size: 14px;
+		}
+
+		@media (max-width:1024px) {
+
+			.blog-post p,
+			.blog p,
+			#comments .media p {
+				text-align: left;
+			}
+		}
+
+		/*------------------------------
+    SMALL DEVICES
+------------------------------*/
+
+		@media (min-width:768px) and (max-width:991px) {
+			.overlay-wrapper .overlay a {
+				font-size: 15px;
+				width: 40px;
+				height: 40px;
+				padding-top: 9px;
+			}
+
+			#reference {
+				min-height: 430px;
+			}
+
+			#blog-timeline h2,
+			#blog-item h2 {
+				font-size: 30px;
+			}
+
+			.blog-post p img {
+				max-width: 100%;
+				margin-bottom: 10px;
+			}
+		}
+
+		.date {
+			color: white;
+		}
+
+		/*------------------------------
+	EXTRA SMALL DEVICES
+------------------------------*/
+
+		@media (max-width:767px) {
+
+			.blog-post p img,
+			.blog p img {
+				max-width: 100%;
+				margin-bottom: 10px;
+			}
+
+			#blog-timeline .sidebar,
+			#blog-item .sidebar {
+				margin-top: 40px;
+			}
+
+			#gallery-item h2 {
+				margin-top: 20px;
+			}
+
+			.recent-post {
+				margin-bottom: 30px;
+				text-align: center;
+			}
+
+			#event-info {
+				padding-bottom: 20px;
+			}
+
+			.event-info-item {
+				margin-bottom: 30px;
+			}
+
+			body {
+				padding-left: 15px;
+				padding-right: 15px;
+			}
+		}
+
+		.form-control {
+			border: 1px solid #d1d4d7;
+			-webkit-border-radius: 2px;
+			-moz-border-radius: 2px;
+			border-radius: 20px;
+			color: #3d3f42;
+			-webkit-box-shadow: none;
+			-moz-box-shadow: none;
+			box-shadow: none;
+		}
+
+		.btn {
+			margin-top: 4px;
+			color: white;
+			border: 1px solid white;
+			border-radius: 10px;
+		}
+
+		.xds {
+			margin-bottom: 10px;
+		}
+
+		.btnr:active,
+		.btnr:hover {
+			color: #007bff !important;
+		}
+	</style>
+</head>
+
+<body>
+
+	<link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css" rel="stylesheet">
+	<section class="content-item grey" id="blog-timeline">
+		<div class="container">
+			<div class="row">
+
+				<!-- BLOG POSTS - START -->
+				<input type="email" class="form-control" placeholder="What are you doing now?">
+			<% for (let i=0 ;i<10;i++) {  %>
+				<div class="col-12">
+
+					<div class=" xds col-md-12">
+						<div class="panel panel-default">
+							<div class="panel-body">
+								
+							</div>
+							<div class="panel-footer">
+
+
+								<div class="pull-right">
+									<button type="button" class="btn btnr">submit</button>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="timeline">
+
+
+
+						<div class="blog-post">
+							<div class="blog-info">
+								<img src="/images/avatar6.png" class="img-responsive" alt="">
+								<div name="" class="date"></div>
+							</div>
+							<h3><a href="#blogitem.html">I visited darkom lbera7 </a></h3>
+							<p><img class="img-responsive pull-right" src="/images/tel3.jpg" alt="">Lorem ipsum dolor
+								sit amet, consectetur adipiscing elit. In venenatis lacus ac semper viverra. Etiam
+								consequat odio sollicitudin metus condimentum, quis hendrerit erat adipiscing. Cras non
+								turpis ut eros varius laoreet a ut felis. Aliquam sodales, purus pulvinar tincidunt
+								congue, elit mauris sodales nisl, consequat iaculis urna enim in lectus. Proin at ornare
+								lacus.</p>
+
+						</div>
+
+
+
+					</div>
+
+
+
+					<% } %>
+				</div>
+			
+			</div>
+		</div>
+	</section>
+
+	<script src="http://netdna.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+
+</body>
+
+</html>

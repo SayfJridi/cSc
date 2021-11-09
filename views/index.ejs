@@ -1,0 +1,1027 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>CSC page</title>
+     <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css" integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2" crossorigin="anonymous">
+    <link rel="stylesheet" href="stylesheets/style.css">
+      <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ho+j7jyWK8fNQe+A12Hb8AhRq26LrZ/JpcUGGOn+Y7RsweNrtN/tE3MoK7ZeZDyx" crossorigin="anonymous"></script>
+    </head>
+    <link rel="icon" href="images/logo.png">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Kiwi+Maru:wght@300&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+     <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css" rel="stylesheet">
+    
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+        <script src="javascripts/jquery.min.js"></script>
+      
+    <script src="stylesheets/assets/owlcarousel/owl.carousel.js"></script>
+    <link rel="stylesheet" href="stylesheets/assets/owlcarousel/assets/owl.carousel.min.css">
+    <link rel="stylesheet" href="stylesheets/assets/owlcarousel/assets/owl.theme.default.min.css">
+	
+	<body>
+   <style>.modal-dialog {
+min-width: 100vw!important;
+ height: 100vh!important;
+  margin: 0;
+  padding: 0;
+}
+
+.modal-content {
+  height: auto;
+  min-height: 100vh;
+  border-radius: 0;
+}</style>
+    
+    
+    <nav class="navbar navbar-expand-lg navbar-light sticky-top">
+  <a class="navbar-brand" href="#"><img style="height: 40px;margin-right: 10vw;" src="images/logo.png"> </a>
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+  <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+    <div class="navbar-nav">
+      <a class="nav-link text-info " style="width:100%!important" href="/about">CSC?</a>
+      <a class="nav-link text-info activex " href="/">Home</a>
+      <a class="nav-link text-info" href="/organisation">Organisation</a>
+      <a class="nav-link text-info" href="#">Activities</a>
+      <a class="nav-link text-info" href="/posts">Posts </a>
+      <a class="nav-link text-info" href="#">Forms</a>
+      <a class="nav-link text-info" href="/meet" tabindex="-1" aria-disabled="false">Meet</a>
+      <% if(!auth) { %>
+         <a  style="margin-left: 30vw;!important" class="nav-link text-info " href="/sign">Sign</a>
+        <% } else { %>
+            <a data-toggle="modal" data-target="#exampleModal"  style="margin-left: 30vw;!important" class="nav-link text-info " href="#"><%= user.username %></a>
+       <% } %> </div>
+  </div>
+</nav>
+    
+        <div class="homet">
+            <video autoplay muted loop id="myVideo">
+  <source src="images/video.mp4" type="video/mp4">
+
+</video>
+    
+    <span  data-aos="fade-right" class="titleh">CSC for  civil society</span>
+             <span  data-aos="fade-right" class="titleh1 ">Discorver The  Civil Society</span>
+            <span  data-aos="fade-right" class="titleh2 ">Increase The  Civil Society comunity.<br>
+Secure every step.<br>
+Express your self.<br>
+Redefine collaboration.
+join Clubs.<br>
+    Every thing online 
+            </span>
+             <a  data-aos="fade-right" href="" class="titleh3">Join Us </a>
+         <a data-aos="fade-right"  href="/users" class="titleh3" style="left: 23%;">People Who Trusted Us  </a>
+    </div>
+    
+       <div  data-aos="fade-LEFT" class="usss" style="width: 100vw;padding-bottom: 20px;">
+  <div  class="uss container" style="">
+      <center>
+    
+      <h1  data-aos="fade-right" style="color :#2b3048; margin-top: 0px!important;padding-top: 15px;">The best software for<strong> CIVIL SOCIETY, NON-PROFIT ORGANISATIONS AND ASSOCIATIONS</strong> </h1>
+      <div class="row" style="">
+      <img  data-aos="fade-right"  class="col-10 col-md-3 whos" style="margin-left: 40px " src="images/who.png">     
+     <span  data-aos="fade-right" class="col-12 col-md-6" style="margin-top: 80px;color:#232a34;font-size: 150%"> CSC is built for every member of yourcivil society, non-profit organizations and associations to plan,
+work, and release great software.<p><a href="#aboutus"  data-aos="fade-right" style="position: relative;color:#355986;font-size: 16px;">More about us .. ?</a></p></span><br>
+         
+              
+          </div>
+          </center>
+    </div>
+           </div>
+
+    <center>
+    <h1  data-aos="fade-right" style="color :#2b3048; margin-top:20px!important;">Tap into the largest <strong style="text-transform:uppercase"> developer community</strong> </h1></center>
+
+   
+<div class="container" style="margin-top:80px;">
+<div class="col-12">
+    <div class="social-feed-separated">
+        <div class="social-avatar">
+            <a href=""  data-aos="fade-right">
+                <img   data-aos="fade-left" alt="image"  src="profile_pics/<%= user.profile_pic %>">
+            </a>
+        </div>
+
+        <div class="social-feed-box">
+           <div style="float:right;padding-bottom:  20px;" class="dropdown">
+  <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+
+  </button>
+  <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+    <a class="dropdown-item" href="#">Delete</a>
+  </div>
+</div>
+            <div class="social-avatar" style="width: 290px">
+                <a href="#" style="color:#005bb5" data-aos="fade-right">
+                    Andrew Williams
+                </a>
+                <small class="text-muted"  data-aos="fade-right">Today 4:21 pm - 12.06.2014</small>
+            </div>
+            <div class="social-body" >
+                <p style="color:#525252;" data-aos="fade-right">
+                    Many desktop publishing packages and web page editors now use Lorem Ipsum as their
+                    default model text, and a search for 'lorem ipsum' will uncover many web sites still
+                    in their infancy. Packages and web page editors now use Lorem Ipsum as their
+                    default model text.
+                </p>
+                <img  data-aos="fade-right" src="images/ev.jpg" class="img-responsive col" style="max-height: 400px;">
+                <div class="btn-group">
+                    <button class="btn btn-white btn-xs"><i class="fa fa-thumbs-up"></i> Like this!</button>
+                    <button class="btn btn-white btn-xs"><i class="fa fa-comments"></i> Comment</button>
+            </div>
+            <div class="social-footer">
+              
+                <div class="social-comment">
+                    <a href="" class="pull-left"  data-aos="fade-right">
+                        <img alt="image" src="images/ava.png">
+                    </a>
+                    <div class="media-body" data-aos="fade-right" >
+                        <a href="#" style="color:gray;" data-aos="fade-right">
+                            Andrew Williams
+                        </a>
+                        Internet tend to repeat predefined chunks as necessary, making this the first true generator on the Internet. It uses a dictionary of over 200 Latin words.
+                        <br>
+                        <a  data-aos="fade-right" href="#" class="small"><i class="fa fa-thumbs-up"></i> 26 Like this!</a> -
+                        <small  data-aos="fade-right" class="text-muted">12.06.2014</small>
+                    </div>
+                </div>
+
+                <div class="social-comment">
+                    <a href="" class="pull-left"  data-aos="fade-right">
+                        <img alt="image" src="images/ava.png">
+                    </a>
+                    <div class="media-body"  data-aos="fade-right">
+                        <a href="#" style="color:gray;" data-aos="fade-right">
+                            Andrew Williams
+                        </a>
+                        Internet tend to repeat predefined chunks as necessary, making this the first true generator on the Internet. It uses a dictionary of over 200 Latin words.
+                        <br>
+                        <a href="#" class="small"><i class="fa fa-thumbs-up"></i> 26 Like this!</a> -
+                        <small class="text-muted">12.06.2014</small>
+                    </div>
+                </div>
+
+
+                <div class="social-comment" data-aos="zoom-in-right">
+                    <a href="" class="pull-left"  data-aos="fade-right">
+                        <img   alt="image" src="images/ava.png">
+                    </a>
+                    <div class="media-body">
+                        <textarea class="form-control" placeholder="Write comment..."></textarea>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+    </div></div>
+    
+    <div class="aboutbgc">
+      <center>
+    <h1  id="aboutus" data-aos="fade-right" style="color :#2b3048; margin-top:20px!important; margin-bottom:20px!important;">About <strong style="text-transform:uppercase"> US</strong> </h1></center>
+    
+   <div >   <img src="images/sw.png" class="sw">
+    <div class="owl-carousel owl-theme">
+      
+          <div class="item"><center><img src="images/6.png" style="max-width: 226px;height:248px;"><p>we Support non-profit organizations</p></center></div>
+    <div class="item"><center><img src="images/logo.png" style="max-width: 226px;height:248px;"><p>we are csc  plateform for civil society</p></center></div>
+  
+    <div class="item"><center><img src="images/10.png" style="max-width: 226px;height:248px;"><p>we Support non-profit  associations</p></center></div>
+    <div class="item"><center><img src="images/9.png" style="max-width: 226px;height:248px;"><p>we are csc</p></center></div>
+
+</div></div>
+    </div>
+    
+        <style> 
+        *{
+            padding:0px;
+            margin:0px;
+            box-sizing: border-box;
+        }
+
+
+
+
+
+/* USER PROFILE */
+#user-profile h2 {
+    padding-right: 15px;
+}
+#user-profile .profile-status {
+	font-size: 0.75em;
+	padding-left: 12px;
+	margin-top: -10px;
+	padding-bottom: 10px;
+	color: #8dc859;
+}
+#user-profile .profile-status.offline {
+	color: #fe635f;
+}
+#user-profile .profile-img {
+	border: 1px solid #e1e1e1;
+	padding: 4px;
+	margin-top: 10px;
+	margin-bottom: 10px;
+}
+#user-profile .profile-label {
+	text-align: center;
+	padding: 5px 0;
+}
+#user-profile .profile-label .label {
+	padding: 5px 15px;
+	font-size: 1em;
+}
+#user-profile .profile-stars {
+	color: #FABA03;
+	padding: 7px 0;
+	text-align: center;
+}
+#user-profile .profile-stars > i {
+	margin-left: -2px;
+}
+#user-profile .profile-since {
+	text-align: center;
+	margin-top: -5px;
+}
+#user-profile .profile-details {
+	padding: 15px 0;
+	border-top: 1px solid #e1e1e1;
+	border-bottom: 1px solid #e1e1e1;
+	margin: 15px 0;
+}
+#user-profile .profile-details ul {
+	padding: 0;
+	margin-top: 0;
+	margin-bottom: 0;
+	margin-left: 40px;
+}
+#user-profile .profile-details ul > li {
+	margin: 3px 0;
+	line-height: 1.5;
+}
+#user-profile .profile-details ul > li > i {
+	padding-top: 2px;
+}
+#user-profile .profile-details ul > li > span {
+	color: #34d1be;
+}
+#user-profile .profile-header {
+	position: relative;
+}
+#user-profile .profile-header > h3 {
+	margin-top: 10px
+}
+#user-profile .profile-header .edit-profile {
+	margin-top: -6px;
+	position: absolute;
+	right: 0;
+	top: 0;
+}
+#user-profile .profile-tabs {
+	margin-top: 30px;
+}
+#user-profile .profile-user-info {
+	padding-bottom: 20px;
+}
+#user-profile .profile-user-info .profile-user-details {
+	position: relative;
+	padding: 4px 0;
+}
+#user-profile .profile-user-info .profile-user-details .profile-user-details-label {
+	width: 110px;
+	float: left;
+	bottom: 0;
+	font-weight: bold;
+	left: 0;
+	position: absolute;
+	text-align: right;
+	top: 0;
+	width: 110px;
+	padding-top: 4px;
+}
+#user-profile .profile-user-info .profile-user-details .profile-user-details-value {
+	margin-left: 120px;
+}
+#user-profile .profile-social li {
+	padding: 4px 0;
+}
+#user-profile .profile-social li > i {
+	padding-top: 6px;
+}
+@media only screen and (max-width: 767px) {
+	#user-profile .profile-user-info .profile-user-details .profile-user-details-label {
+		float: none;
+		position: relative;
+		text-align: left;
+	}
+	#user-profile .profile-user-info .profile-user-details .profile-user-details-value {
+		margin-left: 0;
+	}
+	#user-profile .profile-social {
+		margin-top: 20px;
+	}
+}
+@media only screen and (max-width: 420px) {
+	#user-profile .profile-header .edit-profile {
+		display: block;
+		position: relative;
+		margin-bottom: 15px;
+	}
+	#user-profile .profile-message-btn .btn {
+		display: block;
+	}
+}
+
+
+.main-box {
+    background: #FFFFFF;
+    -webkit-box-shadow: 1px 1px 2px 0 #CCCCCC;
+    -moz-box-shadow: 1px 1px 2px 0 #CCCCCC;
+    -o-box-shadow: 1px 1px 2px 0 #CCCCCC;
+    -ms-box-shadow: 1px 1px 2px 0 #CCCCCC;
+    box-shadow: 1px 1px 2px 0 #CCCCCC;
+    margin-bottom: 16px;
+    padding: 20px;
+}
+.main-box h2 {
+    margin: 0 0 15px -20px;
+    padding: 5px 0 5px 20px;
+    border-left: 10px solid #c2c2c2; /*7e8c8d*/
+}
+
+.btn {
+    border: none;
+	padding: 6px 12px;
+	border-bottom: 4px solid;
+	-webkit-transition: border-color 0.1s ease-in-out 0s, background-color 0.1s ease-in-out 0s;
+	transition: border-color 0.1s ease-in-out 0s, background-color 0.1s ease-in-out 0s;
+	outline: none;
+}
+.btn-default,
+.wizard-cancel,
+.wizard-back {
+	background-color: #7e8c8d;
+	border-color: #626f70;
+	color: #fff;
+}
+.btn-default:hover,
+.btn-default:focus,
+.btn-default:active,
+.btn-default.active, 
+.open .dropdown-toggle.btn-default,
+.wizard-cancel:hover,
+.wizard-cancel:focus,
+.wizard-cancel:active,
+.wizard-cancel.active,
+.wizard-back:hover,
+.wizard-back:focus,
+.wizard-back:active,
+.wizard-back.active {
+	background-color: #949e9f;
+	border-color: #748182;
+	color: #fff;
+}
+.btn-default .caret {
+	border-top-color: #FFFFFF;
+}
+.btn-info {
+	background-color: #5daee7;
+	border-color: #4c95c9;
+}
+.btn-info:hover,
+.btn-info:focus,
+.btn-info:active,
+.btn-info.active, 
+.open .dropdown-toggle.btn-info {
+	background-color: #4c95c9;
+	border-color: #3f80af;
+}
+.btn-link {
+	border: none;
+}
+.btn-primary {
+	background-color: #3fcfbb;
+	border-color: #2fb2a0;
+}
+.btn-primary:hover,
+.btn-primary:focus,
+.btn-primary:active,
+.btn-primary.active, 
+.open .dropdown-toggle.btn-primary {
+	background-color: #38c2af;
+	border-color: #2aa493;
+}
+.btn-success {
+	background-color: #8dc859;
+	border-color: #77ab49;
+}
+.btn-success:hover,
+.btn-success:focus,
+.btn-success:active,
+.btn-success.active, 
+.open .dropdown-toggle.btn-success {
+	background-color: #77ab49;
+}
+.btn-danger {
+	background-color: #fe635f;
+	border-color: #dd504c;
+}
+.btn-danger:hover,
+.btn-danger:focus,
+.btn-danger:active,
+.btn-danger.active, 
+.open .dropdown-toggle.btn-danger {
+	background-color: #dd504c;
+}
+.btn-warning {
+	background-color: #f1c40f;
+	border-color: #d5ac08;
+}
+.btn-warning:hover,
+.btn-warning:focus,
+.btn-warning:active,
+.btn-warning.active, 
+.open .dropdown-toggle.btn-warning {
+	background-color: #e0b50a;
+	border-color: #bd9804;
+}
+
+.icon-box {
+	
+}
+.icon-box .btn {
+	border: 1px solid #e1e1e1;
+	margin-left: 3px;
+	margin-right: 0;
+}
+.icon-box .btn:hover {
+	background-color: #eee;
+	color: #2BB6A3;
+}
+
+a {
+    color: #2bb6a3;
+	outline: none !important;
+}
+a:hover,
+a:focus {
+	color: #2bb6a3;
+}
+
+
+/* TABLES */
+.table {
+    border-collapse: separate;
+}
+.table-hover > tbody > tr:hover > td,
+.table-hover > tbody > tr:hover > th {
+	background-color: #eee;
+}
+.table thead > tr > th {
+	border-bottom: 1px solid #C2C2C2;
+	padding-bottom: 0;
+}
+.table tbody > tr > td {
+	font-size: 0.875em;
+	background: #f5f5f5;
+	border-top: 10px solid #fff;
+	vertical-align: middle;
+	padding: 12px 8px;
+}
+.table tbody > tr > td:first-child,
+.table thead > tr > th:first-child {
+	padding-left: 20px;
+}
+.table thead > tr > th span {
+	border-bottom: 2px solid #C2C2C2;
+	display: inline-block;
+	padding: 0 5px;
+	padding-bottom: 5px;
+	font-weight: normal;
+}
+.table thead > tr > th > a span {
+	color: #344644;
+}
+.table thead > tr > th > a span:after {
+	content: "\f0dc";
+	font-family: FontAwesome;
+	font-style: normal;
+	font-weight: normal;
+	text-decoration: inherit;
+	margin-left: 5px;
+	font-size: 0.75em;
+}
+.table thead > tr > th > a.asc span:after {
+	content: "\f0dd";
+}
+.table thead > tr > th > a.desc span:after {
+	content: "\f0de";
+}
+.table thead > tr > th > a:hover span {
+	text-decoration: none;
+	color: #2bb6a3;
+	border-color: #2bb6a3;
+}
+.table.table-hover tbody > tr > td {
+	-webkit-transition: background-color 0.15s ease-in-out 0s;
+	transition: background-color 0.15s ease-in-out 0s;
+}
+.table tbody tr td .call-type {
+	display: block;
+	font-size: 0.75em;
+	text-align: center;
+}
+.table tbody tr td .first-line {
+	line-height: 1.5;
+	font-weight: 400;
+	font-size: 1.125em;
+}
+.table tbody tr td .first-line span {
+	font-size: 0.875em;
+	color: #969696;
+	font-weight: 300;
+}
+.table tbody tr td .second-line {
+	font-size: 0.875em;
+	line-height: 1.2;
+}
+.table a.table-link {
+	margin: 0 5px;
+	font-size: 1.125em;
+}
+.table a.table-link:hover {
+	text-decoration: none;
+	color: #2aa493;
+}
+.table a.table-link.danger {
+	color: #fe635f;
+}
+.table a.table-link.danger:hover {
+	color: #dd504c;
+}
+
+.table-products tbody > tr > td {
+	background: none;
+	border: none;
+	border-bottom: 1px solid #ebebeb;
+	-webkit-transition: background-color 0.15s ease-in-out 0s;
+	transition: background-color 0.15s ease-in-out 0s;
+	position: relative;
+}
+.table-products tbody > tr:hover > td {
+	text-decoration: none;
+	background-color: #f6f6f6;
+}
+.table-products .name {
+	display: block;
+	font-weight: 600;
+	padding-bottom: 7px;
+}
+.table-products .price {
+	display: block;
+	text-decoration: none;
+	width: 50%;
+	float: left;
+	font-size: 0.875em;
+}
+.table-products .price > i {
+	color: #8dc859;
+}
+.table-products .warranty {
+	display: block;
+	text-decoration: none;
+	width: 50%;
+	float: left;
+	font-size: 0.875em;
+}
+.table-products .warranty > i {
+	color: #f1c40f;
+}
+.table tbody > tr.table-line-fb > td {
+	background-color: #9daccb;
+	color: #262525;
+}
+.table tbody > tr.table-line-twitter > td {
+	background-color: #9fccff;
+	color: #262525;
+}
+.table tbody > tr.table-line-plus > td {
+	background-color: #eea59c;
+	color: #262525;
+}
+.table-stats .status-social-icon {
+	font-size: 1.9em;
+	vertical-align: bottom;
+}
+.table-stats .table-line-fb .status-social-icon {
+	color: #556484;
+}
+.table-stats .table-line-twitter .status-social-icon {
+	color: #5885b8;
+}
+.table-stats .table-line-plus .status-social-icon {
+	color: #a75d54;
+}
+
+.daterange-filter {
+	background: none repeat scroll 0 0 #FFFFFF;
+	border: 1px solid #CCCCCC;
+	cursor: pointer;
+	padding: 5px 10px;
+}
+.filter-block .form-group {
+	margin-right: 10px;
+	position: relative;
+}
+.filter-block .form-group .form-control {
+	height: 36px;
+}
+.filter-block .form-group .search-icon {
+	position: absolute;
+	color: #707070;
+	right: 8px;
+	top: 11px;
+}
+.filter-block .btn {
+	margin-left: 5px;
+}
+@media only screen and (max-width: 440px) {
+	.filter-block {
+		float: none !important;
+		clear: both
+	}
+	.filter-block .form-group {
+		float: none !important;
+		margin-right: 0;
+	}
+	.filter-block .btn {
+		display: block;
+		float: none !important;
+		margin-bottom: 15px;
+		margin-left: 0;
+	}
+	#reportrange {
+		clear: both;
+		float: none !important;
+		margin-bottom: 15px;
+	}
+}
+
+
+.tabs-wrapper .tab-content {
+    margin-bottom: 20px;
+    padding: 0 10px;
+}
+
+/* RECENT - USERS */
+.widget-users {
+    list-style: none;
+	margin: 0;
+	padding: 0;
+}
+.widget-users li {
+	border-bottom: 1px solid #ebebeb;
+	padding: 15px 0;
+	height: 96px;
+}
+.widget-users li > .img {
+	float: left;
+	margin-top: 8px;
+	width: 50px;
+	height: 50px;
+	overflow: hidden;
+	border-radius: 50%;
+}
+.widget-users li > .details {
+	margin-left: 60px;
+}
+.widget-users li > .details > .name {
+	font-weight: 600;
+}
+.widget-users li > .details > .name > a {
+	color: #344644;
+}
+.widget-users li > .details > .name > a:hover {
+	color: #2bb6a3;
+}
+.widget-users li > .details > .time {
+	color: #2bb6a3;
+	font-size: 0.75em;
+	padding-bottom: 7px;
+}
+.widget-users li > .details > .time.online {
+	color: #8dc859;
+}
+
+
+/* CONVERSATION */
+.conversation-inner {
+    padding: 0 0 5px 0;
+	margin-right: 10px;
+}
+.conversation-item {
+	padding: 5px 0;
+	position: relative;
+}
+.conversation-user {
+	width: 50px;
+	height: 50px;
+	overflow: hidden;
+	float: left;
+	border-radius: 50%;
+	margin-top: 6px;
+}
+.conversation-body {
+	background: #f5f5f5;
+	font-size: 0.875em;
+	width: auto;
+	margin-left: 60px;
+	padding: 8px 10px;
+	position: relative;
+}
+.conversation-body:before {
+	border-color: transparent #f5f5f5 transparent transparent;
+	border-style: solid;
+	border-width: 6px;
+	content: "";
+	cursor: pointer;
+	left: -12px;
+	position: absolute;
+	top: 25px;
+}
+.conversation-item.item-right .conversation-body {
+	background: #dcfffa;
+}
+.conversation-item.item-right .conversation-body:before {
+	border-color: transparent transparent transparent #dcfffa;
+	left: auto;
+	right: -12px;
+}
+.conversation-item.item-right .conversation-user {
+	float: right;
+}
+.conversation-item.item-right .conversation-body {
+	margin-left: 0;
+	margin-right: 60px;
+}
+.conversation-body > .name {
+	font-weight: 600;
+	font-size: 1.125em;
+}
+.conversation-body > .time {
+	position: absolute;
+	font-size: 0.875em;
+	right: 10px;
+	top: 0;
+	margin-top: 10px;
+	color: #605f5f;
+	font-weight: 300;
+}
+.conversation-body > .time:before {
+	content: "\f017";
+	font-family: FontAwesome;
+	font-style: normal;
+	font-weight: normal;
+	text-decoration: inherit;
+	margin-top: 4px;
+	font-size: 0.875em;
+}
+.conversation-body > .text {
+	padding-top: 6px;
+}
+.conversation-new-message {
+	padding-top: 10px;
+}
+
+textarea.form-control {
+    height: auto;
+}
+.form-control {
+    border-radius: 0px;
+    border-color: #e1e1e1;
+    box-shadow: none;
+    -webkit-box-shadow: none;
+}
+    </style>
+    
+    
+    
+    <div class="modal fade" id="exampleModal" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-body">
+          
+
+          
+    
+         
+<div class="container bootstrap snippets bootdeys">
+    <div class="row" id="user-profile">
+        <div class="col-lg-3 col-md-4 col-sm-4">
+            <div class="main-box clearfix">
+                <h2><%= user.username %> </h2>
+                <div class="profile-status">
+                    <i class="fa fa-check-circle"></i> Online
+                </div>
+				
+                <img style="width: 100%;" src="profile_pics/<%= user.profile_pic %>" alt="" class="profile-img img-responsive center-block">
+				<form action="/change_profile_pic?_method=PUT" method="post" enctype="multipart/form-data">
+				<input type="file" name="profile_pic" required single>
+				<button class="btn btn-secondary" type="submit">Change Your Profile picture</button>
+			</form>
+
+                <div class="profile-label">
+                    <span class="label label-danger">Admin</span>
+                </div>
+
+           
+
+                <div class="profile-since">
+                    Member since: Jan 2012
+                </div>
+
+            
+            </div>
+        </div>
+
+        <div class="col-lg-9 col-md-8 col-sm-8">
+            <div class="main-box clearfix">
+                <div class="profile-header">
+                    <h3><span>User info</span></h3>
+                    <a href="/edit_profile" class="btn btn-primary edit-profile">
+                        <i class="fa fa-pencil-square fa-lg"></i> Edit profile
+                    </a>
+                </div>
+                <div class="row profile-user-info">
+                    <div class="col-sm-8">
+                        <div class="row profile-user-details clearfix">
+                            <div class="profile-user-details-label">
+                                First Name
+                            </div>
+                            <div class="profile-user-details-value">
+                         <%= user.username %>
+                            </div>
+                        </div>
+                      
+                            
+                        </div>
+                        <div class="col-12 profile-user-details clearfix">
+                            <div class="profile-user-details-label" style="position: relative!important;">
+                          <%= user.facebook_add %>
+                            </div>
+                            
+                        </div>
+                        
+                        <div class="row profile-user-details clearfix col-12">
+                            <div class="profile-user-details-label">
+                                Phone number
+                            </div>
+                            <div class="profile-user-details-value">
+                            <%= user.phone %>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+    
+<div class="modal-footer">
+    <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+<a href="/logout"><button type="button" class="btn btn-primary">Logout</button></a>
+  </div>
+          
+      </div>
+      
+    </div>
+  </div>
+</div>
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    <style>
+        .aboutbgc{
+             background: linear-gradient(40deg , rgba(103, 112, 172, 0.29) , rgba(103, 112, 172, 0.29) , rgba(50, 64, 160, 0.29), rgba(55, 69, 162, 0.29), rgba(57, 73, 183, 0.26),rgba(5, 29, 51, 0.34) ,rgba(5, 40, 72, 0.29));
+animation: change 10s ease-in-out infinite;
+    box-shadow: 91px -200px 400px -200px rgba(0,0,0,0.87) inset;
+-webkit-box-shadow: 91px -200px 400px -200px rgba(0,0,0,0.87) inset;
+-moz-box-shadow: 91px -200px 400px -200px rgba(0,0,0,0.87) inset;
+            
+        }
+        .sw{
+           right: 5px;
+            max-width: 60px;
+            position: absolute;
+            z-index: 9
+        }
+        .owl-carousel p{
+           font-size: 100%;
+            color:#2b3048;
+        }
+        .owl-nav{
+            display: none!important;
+        }
+        .owl-dots{
+            display: none;
+        }
+        
+    </style>
+
+    
+    
+    
+    
+    <footer class="footer-distributed">
+
+			<div class="footer-left">
+          <img src="images/logo.png">
+				<h3>About<span>CSC</span></h3>
+
+				<p class="footer-links">
+					<a href="#">Home</a>
+					|
+					<a href="#">Organisation</a>
+					|
+					<a href="#">Activites</a>
+					|
+					<a href="#">Posts</a>
+                    					|
+					<a href="#">Forms</a>
+                    					|
+					<a href="#">Login</a>
+				</p>
+
+				
+			</div>
+
+			<div class="footer-center">
+				<div>
+					<i class="fa fa-map-marker"></i>
+					  <p><span>azezarzarza ,
+						 dfg sqdf dfsq dqsf</span>
+						sdfsdq fdqsf dsqfq</p>
+				</div>
+
+				<div>
+					<i class="fa fa-phone"></i>
+					<p>+216 10 000 000 </p>
+				</div>
+				<div>
+					<i class="fa fa-envelope"></i>
+					<p><a href="">CSC@CSC.Tn</a></p>
+				</div>
+			</div>
+			<div class="footer-right">
+				<p class="footer-company-about">
+					<span>About the company</span>
+					We offer training and skill and aizje and iaej azopekza </p>
+				<div class="footer-icons">
+					<a href="#"><i class="fa fa-facebook"></i></a>
+					<a href="#"><i class="fa fa-twitter"></i></a>
+					<a href="#"><i class="fa fa-linkedin"></i></a>
+				
+				</div>
+			</div>
+		</footer>
+
+<script>
+  AOS.init();
+</script>
+        <script>
+    $('.owl-carousel').owlCarousel({
+    loop:true,
+    margin:10,
+    nav:true,
+    responsive:{
+        0:{
+            items:1
+        },
+        600:{
+            items:4
+        },
+        1000:{
+            items:4
+        }
+    }
+})
+    </script>
+    
+    </body>
+</html>

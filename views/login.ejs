@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link rel="stylesheet" href="style.css" />
+
+  <title>LogIn/SignUp</title>
+</head>
+
+<body>
+  <div class="container">
+
+    <div class="forms-container" style="height: 100%;">
+      <div class="signin-signup">
+        <form action="/sign" method="post" class="sign-in-form">
+          <h1 style="color:#0b1748;margin-bottom:30px;">Login !</h1>
+          <div class="row">
+            <div class="col-md-6 col-sm-6 col-xs-6">
+
+              <div class="form-group">
+                <input name="username" type="text" required>
+
+                <span class="bar"></span>
+                <label class="labelx">Username</label>
+              </div>
+              <div class="form-group">
+                <input name="password" type="password" required>
+
+                <span class="bar"></span>
+                <label class="labelx">Password</label>
+              </div>
+            </div>
+            <center>
+
+              <div class="col-md-6 col-sm-6 col-xs-6">
+
+                <p style="margin-bottom: 15px; color:white;"> <%= errors[0] %></p>
+
+                <button class="btn btn-primary " name="submit" type="submit">Login</button>
+              </div>
+            </center>
+          </div>
+        </form>
+        <form method="post" action="/sign/sign_up" class="sign-up-form">
+          <center>
+            <h2 style="color:#0b1748;margin-bottom: 20px">Application for membership ! </h2>
+
+            <div class="row">
+              <div class="col-md-6 col-sm-6 col-xs-6">
+
+                <div class="form-group">
+                  <input name="username" type="text" required>
+
+                  <span class="bar"></span>
+                  <label class="labelx">Username</label>
+                </div>
+                <div class="form-group">
+                  <input type="tel" name="phone" required>
+
+                  <span class="bar "></span>
+                  <label class="labelx">Phone Number</label>
+                </div>
+                <div class="form-group">
+                  <input type="email" name="facebook_add" required>
+
+                  <span class="bar"></span>
+                  <label class="labelx">Facebook Adress</label>
+                </div>
+                <div class="form-group">
+                  <input type="password" name="password" minlength="8" required>
+                  <span class="bar"></span>
+                  <label class="labelx">Password</label>
+                </div>
+
+
+              </div>
+            </div>
+
+
+
+            <div class="form-group">
+
+
+
+
+              <div class="form-radio">
+                <div class="radio">
+                  <p>
+
+                    How did you find out about INFOPLUS?</p>
+
+                  <div class="radio">
+                    <label id="checkb">
+                      <input type="radio" name="radio1" /><i class="helper"></i>
+                      Facebook page
+
+                    </label>
+                    <label id="checkb">
+                      <input type="radio" name="radio1" /><i class="helper"></i>
+
+                      Fst group
+
+                    </label>
+                    <label id="checkb">
+                      <input type="radio" name="radio1" /><i class="helper"></i>
+
+                      Friends
+                    </label>
+                  </div>
+                </div>
+
+
+
+              </div>
+
+              <div class="">
+
+                <button id="checkb" class="btn btn-primary " name="submit" type="submit">Submit</button>
+                <button id="checkb" class="btn btn-primary " name="reset" type="reset" style="">Reset </button>
+
+              </div>
+
+            </div>
+          </center>
+        </form>
+      </div>
+    </div>
+
+    <div class="panels-container">
+      <div class="panel left-panel">
+        <div class="content">
+          <h3>New here? </h3>
+          <p>
+            Not yet a member ? What are waiting to join us ..?
+          </p>
+          <button class="btn transparent" id="sign-up-btn">
+            Join us
+          </button>
+          <a href="/"><button class="btn transparent" id="sign-up-btn">
+              Home
+            </button></a>
+        </div>
+        <img src="logo.png" class="image" alt="" />
+      </div>
+      <div class="panel right-panel">
+        <div class="content" style="margin-top: 60px;">
+          <h3>One of us? </h3>
+          <p>
+            Juste open your log to your account .. to your space !
+          </p>
+          <button class="btn transparent" id="sign-in-btn">
+            login
+          </button>
+          <a href="/"><button class="btn transparent" id="sign-up-btn">
+              Home
+            </button></a>
+        </div>
+        <img src="logo.png" class="image" alt="" />
+      </div>
+    </div>
+  </div>
+
+  <script src="app.js"></script>
+</body>
+
+</html>
